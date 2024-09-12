@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+  --primary: #54bca4;
+  --font: #3a3c3b;
+  --title: #98a09c;
+  --white: #ffffff;
+  --hoverbtn: #eefcf3;
+  --hoverbtnmasuk: #a6ddcf;
+  --navoff: #5f6d7e;
+  --hr: #c9d9d2;
+  --footer: #1b443b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+.linear-bg{
+  background: linear-gradient(160.7deg, #7CBEB2 19.16%, #CCCE71 48.86%, #54BCA4 90.79%);
+  height: 100vh;
+}
+.bg-white{
+  background: white;
+  color: black;
+}
+
+.w-45{
+  width: 45%
+}
+
+.w-65{
+  width: 65%;
+}
+
+.fw-500{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Navbar */
+
+.nav {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+.nav-item {
+  padding-right: 40px;
+}
+
+.nav-link active {
+  color: var(--primary);
+}
+
+#responsive-navbar-nav .nav-link {
+  color: var(--navoff);
+}
+
+#responsive-navbar-nav .nav-link:hover {
+  color: var(--primary);
+}
+
+#responsive-navbar-nav .btndaftar {
+  align-items: center;
+  border-color: var(--primary);
+  color: var(--primary);
+  border-radius: 32px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+#responsive-navbar-nav .btnmasuk {
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  border-radius: 32px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+#responsive-navbar-nav .btndaftar:hover {
+  background-color: var(--hoverbtn);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+#responsive-navbar-nav .btnmasuk:hover {
+  background-color: var(--hoverbtnmasuk);
+  color: var(--white);
+  border: 1px solid;
+}
+
+#responsive-navbar-nav .btnlogout {
+  align-items: center;
+  background-color: #C93D3D;
+  color: var(--white);
+  border-color: #C93D3D;
+  border-radius: 32px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+#responsive-navbar-nav .btnlogout:hover {
+  background-color: #D58F8F;
+  color: var(--white);
+  border: 1px solid;
+}
+
+/* Hero */
+
+.hero {
+  color: var(--font);
+}
+
+.hero-view {
+  margin-top: 110px;
+}
+
+.hero-content h1 {
+  line-height: 60px;
+}
+
+.singkatan {
+    color: var(--primary);
+}
+  
+.hero-content p {
+  color: var(--title);
+  line-height: 38px;
+}
+
+.hero .btncek {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--primary);
+  text-decoration: none;
+  color: var(--white);
+}
+
+.hero .btncek:hover {
+  background-color: var(--hoverbtn);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.hero hr {
+  margin: 70px auto;
+  border: none;
+  border-bottom: solid 4px var(--hr);
+  border-radius: 8px;
+}
+
+/* Data Stunting */
+
+.data {
+  margin-bottom: 100px;
+  color: var(--font);
+}
+
+.data-content .sub-title {
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.data .card {
+  border-width: 4px;
+  border-color: var(--primary);
+  border-radius: 16px;
+}
+
+.card .card-title {
+  color: var(--font);
+}
+
+.card .card-text {
+  margin-top: -1px;
+}
+
+.data .card-body img {
+  margin-bottom: 8px;
+  margin-top: -30px;
+}
+
+/* carousel */
+
+.carousel {
+  margin-bottom: 100px;
+}
+
+.layanan-kami h2 {
+  color: var(--font);
+}
+
+.carousel .carousel-indicators button {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+/* list artikel */
+.artikel {
+  margin-bottom: 100px;
+  color: var(--font);
+}
+
+.artikel .jenis-artikel {
+  font-weight: 600;
+}
+
+.artikel .title-artikel {
+  font-weight: 500;
+  color: var(--font);
+}
+
+.artikel .btnselengkapnya {
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  border-radius: 32px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.artikel .btnselengkapnya:hover {
+  background-color: var(--hoverbtn);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+/* footer */
+
+.footercolo {
+  background-color: var(--footer);
+}
+
+.footercolo .flogo {
+    margin-bottom: -10px;
+}
+
+.footercolo .fslogan {
+    line-height: 30px;
+}
+
+.footercolo hr {
+  margin-top: -40px;
+  border: none;
+  border-bottom: solid 3px var(--hr);
+  border-radius: 8px;
+}
+
+.footercolo .ficon {
+    margin-top: 20px;
+    margin-left: -12px;
+}
+
+.footercolo .dev {
+  font-weight: bold;
+}
+
+.footercolo .fcopyright {
+  margin-inline-end: 380px;
+}
+
+.footercolo .fsyarat {
+  margin-inline-end: 10px;
+}
+
+.footercolo .fkebijakan {
+  margin-inline-end: -10px;
+}
+
+/* form */ 
+
+.btclor {
+  background-color: #54bca4;
+}
+
+/* isian artikel */
+
+.hero-image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.breadcrumb-item a {
+  color: #BEDED0;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+
+/* content artikel */
+.content-artikel {
+  text-align: justify;
+}
+
+.content-artikel p{
+  color: #1A2C24;
+  text-indent: 0.5in;
+}
+
+.text-warna {
+  color: #54bca4;
+}
+
+/* -------------------------------------------------------- Artikel Filter Start--------------------------------------- */
+
+.artikel-filter button {
+  align-items: center;
+  background-color: white;
+  border-radius: 32px;
+  /* padding: 12px 16px; */
+  font-size: 18px;
+  width: 200px;
+  height: 50px;
+  color: #54bca4;
+  border: solid 1px #54bca4;
+  outline: none; /* Remove the default outline */
+}
+
+.artikel-filter button:hover {
+  background-color: #eefcf3;
+  color: #54bca4;
+  border: 1px solid #54bca4;
+}
+
+/* active */
+
+.artikel-filter button:focus {
+  background-color: #54bca4;
+  color: white;
+  border: 1px solid #54bca4;
+}
+
+/* -------------------------------------------------------- Artikel Filter End--------------------------------------- */
+
+.hero-artikel-content a {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.hero-artikel-content h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hero-artikel-deskripsi {
+  font-size: 20px;
+  margin-top: 12px;
+  color: #98a09c;
+}
+
+.hero-artikel-image img {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.card {
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-image {
+  float: inline-end;
+}
+
+.card-image img {
+  width: 491px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.card-body {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.card-body .jenis-artikel {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.card-body .card-title {
+  font-size: 32px;
+}
+
+.card-body .card-text {
+  font-size: 20px;
+  margin-top: 12px;
+  text-align: justify;
+  color: #98a09c;
+}
+
+.card-body .card-link {
+  font-size: 18px;
+  color: #54bca4;
+}
+
+/* -------------------------------------------------------- Paggination Start--------------------------------------- */
+
+.pagination {
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.pagination .page-link {
+  background-color: white;
+  border: solid 1px var(--primary);
+  color: var(--primary);
+  border-radius: 8px;
+  /* font-size: 24px; */
+  width: 40px;
+  height: 40px;
+}
+
+.pagination .page-link:hover {
+  background-color: #eefcf3;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+/* -------------------------------------------------------- Paggination End--------------------------------------- */
+
